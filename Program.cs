@@ -10,6 +10,7 @@ class Program
             Console.WriteLine("1. Proxy (Youtube get video)");
             Console.WriteLine("2. Decorator (Coffee shop)");
             Console.WriteLine("3. Adapter (Logger)");
+            Console.WriteLine("4. Composite (File System)");
             Console.WriteLine("0. Exit");
             string? input = InputHelpers.StringInput("\nYour choice: ");
 
@@ -31,6 +32,10 @@ class Program
                 else if (userChoice == 3)
                 {
                     Logger.Menu.Run();
+                }
+                else if (userChoice == 4)
+                {
+                    Composite.Menu.Run();
                 }
                 else
                 {
